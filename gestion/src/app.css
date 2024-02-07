@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+header {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    height: 150px;
+    width: 100%;
+    background-color: rgb(245, 238, 229);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #5d130e;
+
+    color: #fff;
+}
+
+#logo_text {
+    margin-left: -50px;
+    display: flex;
+    font-size: 50px;
+}
+
+#logo {
+    display: flex;
+    height: 57px;
+    width: 207px;
+}
+
+#registration_bar {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 160px;
+    height: 50px;
+    vertical-align: center;
+}
+
+/* Более компактные стили для input */
+input {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Стили для фокуса (активного) input */
+input:focus {
+    border-color: rgb(245, 238, 229);
+    outline: none;
+}
+
+/* Стили для input типа checkbox */
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+/* Стили для input типа submit (кнопка отправки) */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#botton_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 43px;
+    width: 100%;
+    background-color: rgb(245, 238, 229);
+    border-top: 1px solid #ccc; /* Линия сверху (бордюр) */
+}
+
+#search_div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content {
+    min-height: 516px;
+    margin-bottom: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 249, 246);
+    width: 150px;
+}
+
+#main_content {
+    width: 1000px;
+}
+
+#rigth_bar {
+    background-color: rgb(255, 249, 246);
+    width: 150px;
+}
+
+.center_text {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    border: 3px solid gray;
+}
+
+td, th {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid gray;
+}
+
+#search {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+}
+
+#shop {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+/* Стили для тегов a (гиперссылок) */
+a {
+    color: #333; /* Цвет текста ссылки */
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    position: relative;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Плавное изменение цвета при hover */
+}
+
+a:hover {
+    color: gray; /* Цвет текста ссылки при наведении */
+}
+
+/*!* Подчеркивание снизу при hover *!*/
+/*a::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 2px;*/
+/*    background-color: gray;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    transform: scaleX(0);*/
+/*    transform-origin: bottom right;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Стили для посещенных ссылок */
+a:visited {
+    color: gray;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#card {
+    width: 250px;
+    height: 430px;
+    margin: 20px;
+    text-align: center;
+}
+
+#card_img {
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+
+#service_card {
+    margin: 15px;
+    width: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #ccc; /* Обводка карточки */
+    border-radius: 8px; /* Скругление углов */
+    overflow: hidden; /* Обрезаем изображение за пределами карточки */
+    transition: transform 0.3s ease; /* Добавляем анимацию увеличения при наведении */
+}
+
+#service_card:hover {
+    transform: scale(1.05); /* Увеличиваем карточку при наведении */
+}
+
+#service_img {
+    width: 250px;
+    height: 152px;
+}
+
+#sum {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Выравниваем элементы по центру */
+    align-items: center;
+}
+
+.dics {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 23px;
+    width: 100px; /* Ширина 100% для равномерного распределения */
+}
+
+#dics_price {
+    font-size: 13px;
+}
+
+/* Стили для кнопки с другим цветом */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #5d130e; /* Зеленый цвет фона кнопки */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5d130e; /* Темно-зеленый цвет фона кнопки при наведении */
+}
+
+#info_text {
+    margin-bottom: 15px;
+}
+
+#service_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#basket_button {
+    align-self: flex-end;
+}
+
+#sama {
+    margin-left: 425px;
+    width: 150px;
+    height: 50px;
+}
+
+#img_ip {
+    margin-left: 200px;
+}
+
+#free_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 10px;
+}
+
+#free_img {
+    width: 96px;
+    height: 96px;
+}
+
+#free_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.question-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.form-textarea {
+    resize: vertical;
+}
+
+#bug_service {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 1000px;
+    height: auto;
+}
+
+#left_bar_text {
+    margin-top: 20px;
+}
+
+#login-button {
+    margin-left: 190px;
+}
+
+#bag_buy {
+  margin-top: 25px;
+  margin-left: 38px;
+}
+
+#log {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+#req {
+  margin-top: 30px;
+}
+
+#shop_div {
+    flex-direction: column;
+}
+
+#shop_card {
+    display: flex;
+    vertical-align: center;
+    width: 1000px;
+    height: 200px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-right: 15px;
+
+    /* Другие стили для вашего блока магазина */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень, создающая эффект обьемной рамки */
+    border: 1px solid #ccc; /* Граничная линия, которая также добавляет обьемности */
+    border-radius: 8px; /* Скругление углов (на ваш вкус) */
+    position: relative; /* Позиционирование для позиционирования абсолютных элементов относительно этого блока */
+}
+
+#shop_img {
+    height: 200px;
+    width: 300px;
+}
+
+#shope_name {
+
+}
+
+#shope_price {
+
+}
+
+.shope_info{
+
+}
+
+#remove_button {
+    margin-top: 70px;
+    height: 50px;
+    margin-left: 100px;
+}
+
+#texting {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+#right {
+    margin-top: 20px;
+    margin-left: 700px;
+    width: 300px;
+    height: 100px;
+    /* Другие стили для вашего блока магазина */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень, создающая эффект обьемной рамки */
+    border: 1px solid #ccc; /* Граничная линия, которая также добавляет обьемности */
+    border-radius: 8px; /* Скругление углов (на ваш вкус) */
+    position: relative;
+}
+
+#buy{
+    margin-left: 100px;
+}
+
+#login-button1 {
+    margin-left: 250px;
+}
+
+#phone {
+    margin-bottom: 15px;
+}
+
+.confirmation-popup {
+    margin-left: 220px;
+}
+
+#but {
+    margin-left: 220px;
+}
+
+#swiper {
+    margin-left: 100px;
+    height: 400px;
+    width: 800px;
+}
+
+.slick-prev, .slick-next {
+    font-size: 24px;
+    line-height: 1;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+#yes {
+    width: 500px;
+    height: 100px;
+}
+#a {
+    background-color: green;
+}
+
+#butn {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: #5d130e;
+}
+
+#pht {
+    margin-left: 120px;
+    width: 800px;
+    height: 400px;
+}
